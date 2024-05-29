@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { WishItem } from '../shared/models/wishItems';
 
 @Component({
   selector: 'app-root',
@@ -9,5 +10,10 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  items = [
+    new WishItem ('Item one'),
+    new WishItem ('Item two'),
+    new WishItem ('Item three')
+  ]
   title = 'wishList';
 }
